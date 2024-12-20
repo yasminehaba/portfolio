@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="../styles.css/style.css">
+    <link rel="stylesheet" href="../styles.css/styleContact.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a href="#" class="nav__logo">PORTFOLIO</a>
+      <div class="nav__menu">
+        <a href="../index.html" class="nav__link">Home</a>
+        <a href="parcours_académique.html" class="nav__link">Parcours</a>
+        <a href="compétences.html" class="nav__link">Compétences</a>
+
+        <!--=============== DROPDOWN 1 ===============-->
+        <div class="dropdown__item">
+          <a href="#" class="nav__link">Manifestations <i class="ri-arrow-down-s-line"></i></a>
+          <ul class="dropdown__menu">
+            <li><a href="manifestation.html" class="dropdown__link">Manifestations</a></li>
+            <li><a href="projet.html" class="dropdown__link">Projets</a></li>
+            <li><a href="passion.html" class="dropdown__link">Passions</a></li>
+          </ul>
+        </div>
+
+       
+        
+          
+            <a href="quiz.html" class="nav__link">Quizz</a>
+      
+            <a href="iit.html" class="nav__link">IIT</a>
+          
+
+        <a href="contact.html" class="nav__link">Contact</a>
+      </div>
+    </nav>
+  </header>
+     
+      <main>
+        
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+          <br><br><br><br><br><br><br><br>
+            <div class="contact-left-title">
+                <h2>Contact Me</h2>
+                <hr>
+            </div>
+           
+            <input type="hidden" name="access_key" value="bcd269f1-db60-44c4-9a78-336949cda1a7">
+            <input type="text" name="name" placeholder="your name" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="your email" class="contact-inputs" required>
+            <textarea name="message" placeholder="your message" class="contact-inputs" required></textarea>
+            <button type="submit">Submit <img src="../assets/images/arrow_icon.png" alt=""></button>
+
+        </form>
+         <!-- <form action="mailto:yesmine0203@gmail.com" method="post" class="contact-left">
+          <br><br><br><br><br><br><br><br>
+            <div class="contact-left-title">
+                <h2>Contact Me</h2>
+                <hr>
+            </div>
+            <input type="text" name="name" placeholder="your name" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="your email" class="contact-inputs" required>
+            <textarea name="message" placeholder="your message" class="contact-inputs" required></textarea>
+            <button type="submit">Submit <img src="../assets/images/arrow_icon.png" alt=""></button>
+
+        </form> -->
+       
+        <div class="contact-right">
+            <img src="../assets/images/right_img.png" alt="">
+        </div>
+    </div>
+</main>
+</body>
+</html>

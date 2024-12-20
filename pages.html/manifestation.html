@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manifestations</title>
+  <link rel="stylesheet" href="../styles.css/styleM.css">
+  <link rel="stylesheet" href="../styles.css/style.css">
+
+  <!-- Remixicons pour les icônes -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<header class="header">
+  <nav class="nav">
+    <a href="#" class="nav__logo">PORTFOLIO</a>
+    <div class="nav__menu">
+      <a href="../index.html" class="nav__link">Home</a>
+      <a href="parcours_académique.html" class="nav__link">Parcours</a>
+      <a href="compétences.html" class="nav__link">Compétences</a>
+
+      <!--=============== DROPDOWN 1 ===============-->
+      <div class="dropdown__item">
+        <a href="#" class="nav__link">Manifestations <i class="ri-arrow-down-s-line"></i></a>
+        <ul class="dropdown__menu">
+          <li><a href="manifestation.html" class="dropdown__link">Manifestations</a></li>
+          <li><a href="projet.html" class="dropdown__link">Projets</a></li>
+          <li><a href="passion.html" class="dropdown__link">Passions</a></li>
+        </ul>
+      </div>
+
+     
+      
+        
+          <a href="quiz.html" class="nav__link">Quizz</a>
+    
+          <a href="iit.html" class="nav__link">IIT</a>
+        
+
+      <a href="contact.html" class="nav__link">Contact</a>
+    </div>
+  </nav>
+</header>
+  <br><br>
+<body>
+  <!-- Section Manifestations -->
+  <section class="manifestations" id="manifestations">
+    <br><br><br><br><br>
+    <h2 class="heading">Manifestations Scientifiques et Événements</h2>
+    <div class="manifestation-container">
+      
+      <!-- Carte d'une manifestation -->
+      <div class="manifestation-card" onclick="openPopup('../assets/images/formation.jpg')">
+        <img src="../assets/images/formation.jpg" alt="Manifestation 1">
+        <h3>Journée de Formation 2023</h3>
+        <p>Participation à une journée de formation sur les nouvelles technologies.</p>
+      </div>
+
+      <!-- Carte d'une autre manifestation -->
+      <div class="manifestation-card" onclick="openPopup('../assets/images/nmtc.jpg')">
+        <img src="../assets/images/nmtc.jpg" alt="Manifestation 2">
+        <h3>Conférence</h3>
+        <p>Participation à une conférence sur l'innovation en développement.</p>
+      </div>
+
+      <!-- Carte d'un autre événement -->
+      <div class="manifestation-card" onclick="openPopup('../assets/images/hac.png')">
+        <img src="../assets/images/hac.png" alt="Manifestation 3">
+        <h3>Hackathon</h3>
+        <p>Participation à un hackathon sur le développement de solutions fintech.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Popup pour afficher l'image -->
+  <div class="popup" id="popup">
+    <span class="close-btn" onclick="closePopup()">&times;</span>
+    <img src="" alt="Popup Image" id="popup-img">
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    function openPopup(imageSrc) {
+      document.getElementById('popup-img').src = imageSrc;
+      document.getElementById('popup').style.display = 'flex';
+    }
+
+    function closePopup() {
+      document.getElementById('popup').style.display = 'none';
+    }
+  </script>
+</body>
+</html>

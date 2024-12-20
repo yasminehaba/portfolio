@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="../styles.css/styleQ.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script src="../script.js" defer></script>
+    <audio id="correct-audio" src="../assets/audio/success-1-6297.mp3"></audio>
+    <audio id="wrong-audio" src="../assets/audio/fail-2-277575.mp3"></audio>
+    <audio id="applause-audio" src="../assets/audio/piglevelwin2mp3-14800.mp3"></audio>
+    <audio id="failure-audio" src="../assets/audio/wah-wah-sad-trombone-6347.mp3"></audio>
+</head>
+<body>
+    <a href="../index.html" class="home-button">
+        <i class="fas fa-sign-out-alt"></i> Retour
+    </a>
+    <div class="quiz-wrapper">
+        <div class="quiz-box" id="quiz">
+            <div class="question-count">
+                <p class="count"><span id="count-question">1</span>/<strong id="total-questions">3</strong></p>
+                <p class="question-title">Question</p>
+            </div>
+            <div class="question-box">
+                <span id="question-number">1</span>
+                <p id="question">La question apparaîtra ici</p>
+            </div>
+            <div class="answers-box">
+                <div class="box">
+                    <div class="answer-number">A</div>
+                    <input type="radio" name="option" id="first" value="a" required hidden>
+                    <label for="first" class="answer-lable" id="option-text-a">Option A</label>
+                </div>
+                <div class="box">
+                    <div class="answer-number">B</div>
+                    <input type="radio" name="option" id="second" value="b" required hidden>
+                    <label for="second" class="answer-lable" id="option-text-b">Option B</label>
+                </div>
+                <div class="box">
+                    <div class="answer-number">C</div>
+                    <input type="radio" name="option" id="third" value="c" required hidden>
+                    <label for="third" class="answer-lable" id="option-text-c">Option C</label>
+                </div>
+                <div class="box">
+                    <div class="answer-number">D</div>
+                    <input type="radio" name="option" id="fourth" value="d" required hidden>
+                    <label for="fourth" class="answer-lable" id="option-text-d">Option D</label>
+                </div>
+            </div>
+            <div class="button-box">
+                <button type="button" class="button" id="next-btn">Suivant</button>
+                <button type="button" class="button" id="submit-btn" style="display: none;">Soumettre</button>
+                
+            </div>
+        </div>
+        <div class="result-show" id="result" style="display: none;">
+            <h2 id="score">Votre score</h2>
+            <div class="button-box">
+                <button class="button" onclick="location.reload();">Recommencer</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
